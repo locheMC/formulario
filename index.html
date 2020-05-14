@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="estilos.css">
+    <title></title>
+  </head
+  <body>
+    <div id="box">
+      <h2 id="Titulo">REGISTRO</h2>
+    <form class="formulario" action="formulario.php" method="post">
+      <label for="Cedula">Cedula:</label>
+      <input type="text" name="Cedula" required pattern="[0-9]*" maxlength="10">
+    <label for="Nombre1">Nombre:</label>
+    <input type="text" name="Nombre" pattern="[A-Za-z]+" required>
+    <label for="Apellido1">Apellido:</label>
+    <input type="text" name="Apellido" pattern="[A-Za-z]+" required>
+    <label for="Edad1">Edad:</label>
+    <input type="number" name="Edad" required max="90" min="1">
+    <label for="Telefono1">Telefono:</label>
+    <input type="text" name="Telefono" placeholder="300*******" pattern="[0-9]*" maxlength="10" title="Solo digitar numeros">
+    <label for="Gustos1">Gustos:</label>
+    <label for="Musica" id="musica">Musica:</label>
+    <input type="checkbox" name="Gustos" value="">
+    <label for="Deporte" id="deporte">Deporte:</label>
+    <input type="checkbox" name="Gustos" value="">
+    <label for="Arte" id="arte">Arte:</label>
+    <input type="checkbox" name="Gustos" value="">
+    <label for="Ninguno" id="ninguno">Ninguno:</label>
+    <input type="checkbox" name="Gustos" value="">
+    <label for="Ciudad1">Ciudad:</label>
+    <select class="Ciudad" name="Ciudad">
+      <optgroup label="Ciudad">
+        <option value="1">Barranquilla</option>
+        <option value="2">Medellin</option>
+        <option value="3">Bogota</option>
+      </optgroup>
+    </select>
+    <label for="Permisos">Permisos</label>
+    <textarea class="area" name="Permisos" rows="8" cols="40" readonly>Mediante este proceso da permiso para compartir sus datos personales.</textarea>
+    <button class="button" type="submit" name="button" value="Insertar datos">Enviar</button>
+    </form>
+  </body>
+</html>
