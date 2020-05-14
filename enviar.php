@@ -2,8 +2,8 @@
 
 $cedula = $_POST['Cedula'];
 $nombre = $_POST['Nombre'];
-$apellido = $_POST['Apellido'];
-$diereccion = $_POST['Direccion'];
+$apellido = $_POST['Apellidos'];
+$direccion = $_POST['Direccion'];
 $telefono = $_POST['Selecciones'];
 $sexo = $_POST['Sexo'];
 
@@ -13,7 +13,7 @@ $sexo = $_POST['Sexo'];
  if($e) {
    echo "Datos ingresados";
  }else {
-   echo "Datos no ingresados " . $con->connect_errno;
+   echo "Datos no ingresados " . mysqli_error($con);
  }
 
  ?>
