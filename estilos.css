@@ -1,72 +1,74 @@
-#Titulo{
-  height: 50px;
-  width: 220px;
-  color: white;
-  background-color: aqua;
-  font-size: 40px;
-  margin-left: 90px;
-  border-radius: 16px 16px 16px 16px;
-  text-align: center;
+{
+
+	margin:0;
+	padding: 0;
+
 }
-#box{
-  background-color: #fff;
-  border-radius: 10px 10px 10px 10px;
-  height: 700px;
-  width: 400px;
-  float: left;
-  margin-left: 450px;
-  margin-top: 25px;
+body{
+    padding: 0px;
+    margin: 0px;
+    border:none;
+    width: 100%;
+    background: #DBD4D2;
 }
-#box input{
-  float: right;
-  margin-top: -37px;
-  margin-bottom: 17px;
-  margin-right: 35px;
+header{
+	width: 50%;
+	height: 150px;
+    border: 0px solid black;
+    margin: 0 25%;
+    margin-top: 10px;   
 }
-#box label{
-padding: 0 5px;
-margin: 0;
-display: block;
-color:black;
-font-weight: bold;
-margin-top: 10px;
-margin-bottom: 20px;
-margin-left: 40px;
+
+#formulario{
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+    border-radius: 10px;
+    border: 1px solid #666666;
+    width: 500px;
 }
-#box input[type="text"],
-#box input[type="number"]{
-  border: none;
-  border: 1px solid black;
-  background: transparent;
-  outline: none;
-  width: 170px;
-  font-size: 13px;
-  background: white;
+input[type="text"] {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #fff;
+    border: 1px solid #ccc;
+    color: #777;
+    max-width: 100%;
+    outline: none;
+    padding: 7px 8px;
+
 }
-#box input[type="checkbox"]{
-  border: none;
-  border: 2px solid aqua;
-  margin-right: 197px;
+input[type="number"] {
+	border-radius: 5px;
+	margin: 10px 0;
+	background: #fff;
+	border:1px solid #ccc;
+	color: #777;
+	padding: 7px 8px;
 }
-.Ciudad{
-  float: right;
-  margin-right: 104px;
-  margin-top: -37px;
+input[type="submit"] {
+    border-radius: 5px;
+    margin: 10px 0;
+    background: #0088B2;
+    color: #fff;
+    padding: 8px 14px;
+    font-weight: bold;
+    border:none;
+
+     
 }
-.area{
-  float: right;
-  margin-right: 50px;
-}
-.button{
-  float: right;
-  margin-right: 140px;
-  margin-top: 20px;
-  border: none;
-  outline: none;
-  height: 30px;
-  width: 120px;
-  background: aqua;
-  color: #fff;
-  font-size: 20px;
-  border-radius: 12px;
-}
+input[type="submit"]:hover {
+    background: #444;
+ }   
+
+ select[name="selecciones"]{
+ 	border-radius: 5px;
+	margin: 10px 0;
+	background: #fff;
+	border:1px solid #ccc;
+	color: black;
+	padding: 7px 8px;
+
+ }
+
+	
